@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Bellybutton Biodiversity</title>
+   
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p> <color = "red"> Use the interactive charts below to explore the dataset</color></p>
+        
+      </div>
+    </div>
+    <p>
+      <b>
+      Please.. let yourself be enlighted by selecting a "Test Subject ID No." below to evaluate the bacteria in their belly buttons.<br>
+      <br>The company Improbable BEEF is attempting to find the specific bacteria that will make their fake beef taste like a real burger.<br>
+      That is the goal anyways. 
+    </b>
+    </p>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5><b>Test Subject ID No.:</b></h5>
+          <!--select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div id="bar"></div>
+        <div class="col-md-12 text_center">
+          <p>
+              This bar chart shows the top ten bacteria that has accumulated in this subject.<br>
+          </p>
+      </div>
+      <div class="col-md-12">
+        <div id="gauge"></div>
+        <div class="col-md-12">
+          <p>
+              This guage chart shows the frequency of scrubs.  Based on the data it can be said the less scrubs the more bacteria present.  Eveyone has a different belly button layout.<br>
+          </p>
+      </div>
+    <div class="row">
+
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <div class="col-md-10">
+          <p>
+              This bubble chart shows the bacteria present and the amount of each bacteria.<br>
+              <br>I suppose you can gather what bacteria might grow the fastes with taking scrubs into consideration.
+
+          </p>
+      </div> 
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="Charts.js"></script>
+
+</body>
+
+</html>
