@@ -1,0 +1,22 @@
+body {
+
+    color: #25dfdf;
+   
+
+
+}
+
+h1 {
+	color: #00FF00;
+}
+
+
+.jumbotron {
+    background-image: url("https://github.com/russellctaylor/Belly_Button/blob/main/images/burger_dog.png?raw=true" );
+    background-size: 100% 100%;
+    text-align: center;
+    
+  }  
+
+
+  
